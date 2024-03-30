@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Prediction</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./index.css">
+
+</head>
+<body>
+<div id="top" class="demo-page">
+  <div class="demo-page-navigation">
+    <nav>
+      <ul>
+        <li>
+          <a href="#top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers">
+              <polygon points="12 2 2 7 12 12 22 7 12 2" />
+              <polyline points="2 17 12 22 22 17" />
+              <polyline points="2 12 12 17 22 12" />
+            </svg>
+            Intro</a>
+        </li>
+        <li>
+          <a href="#input-types">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-align-justify">
+              <line x1="21" y1="10" x2="3" y2="10" />
+              <line x1="21" y1="6" x2="3" y2="6" />
+              <line x1="21" y1="14" x2="3" y2="14" />
+              <line x1="21" y1="18" x2="3" y2="18" />
+            </svg>
+            Input Data</a>
+        </li>
+        <li>
+          <a href="#contribute">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+            </svg>
+            Github Link</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <main class="demo-page-content">
+    <section>
+      <div class="href-target" id="intro"></div>
+      <h1 class="package-name">Heart Disease Prediction</h1>
+      <p>
+        Heart Disease Prediction. Powered by Python and FastAPI, our backend ensures efficiency and seamless integration. Additionally, we leverage MongoDB for secure storage of predictions and inputs. This amalgamation of technologies promises accurate forecasts and scalable solutions in cardiovascular health analytics.
+      </p>
+    </section>
+
+    <section>
+      <div class="href-target" id="input-types"></div>
+      <h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-align-justify">
+          <line x1="21" y1="10" x2="3" y2="10" />
+          <line x1="21" y1="6" x2="3" y2="6" />
+          <line x1="21" y1="14" x2="3" y2="14" />
+          <line x1="21" y1="18" x2="3" y2="18" />
+        </svg>
+        Input Data
+      </h1>
+
+      <form id="predictionForm">
+        <div class="nice-form-group">
+          <label>Name</label>
+          <input type="text" name="name" placeholder="Your name" value="" />
+        </div>
+
+        <div class="nice-form-group">
+          <label>AGE</label>
+          <input type="number" name="age" placeholder="Your AGE" value="" />
+        </div>
+
+      <div class="nice-form-group">
+        <label>Sex</label>
+        <select name="sex">
+          <option>Select One</option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
+
+      <div class="nice-form-group">
+        <label>Chest Pain</label>
+        <select name="cp">
+          <option>Select One</option>
+          <option>No Pain</option>
+          <option>Low Pain</option>
+          <option>Medium Pain</option>
+          <option>Severe Pain</option>
+        </select>
+      </div>
+
+      <div class="nice-form-group">
+        <label>Blood Pressure (BP)</label>
+        <input type="number" name = "bp" placeholder="Your Blood Pressure" />
+      </div>
+
+      <div class="nice-form-group">
+        <label>Cholesterol level</label>
+        <input type="number" name = "choles" placeholder="Your Cholesterol level" value="" />
+      </div>
+
+      <div class="nice-form-group">
+        <label>Fasting Blood Sugar</label>
+        <select name="fbp">
+          <option>Select One</option>
+          <option>More Than 120</option>
+          <option>Less Than 120</option>
+        </select>
+      </div>
+
+      <div class="nice-form-group">
+        <label>Resting ECG</label>
+        <select name = "recg">
+          <option>Select One</option>
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+        </select>
+      </div>
+
+      <div class="nice-form-group">
+        <label>Maximum Heart Rate</label>
+        <input type="number" name ="mhr" placeholder="Maximum Heart Rate" value="" />
+      </div>
+
+      <div class="nice-form-group">
+        <label>Exercise Induced Angina</label>
+        <select name = "eia">
+          <option>Select One</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <div class="nice-form-group">
+        <label>Old Peak</label>
+        <input type="number" name ="oldpeak"  placeholder="Old Peak" value="" />
+      </div>
+
+      <div class="nice-form-group">
+        <label>Slope</label>
+        <select name = "slope">
+          <option>Select One</option>
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+        </select>
+      </div>
+
+      <div class="nice-form-group">
+        <label>Number of Major Vessels</label>
+        <select name = "major_vessels">
+          <option>Select One</option>
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+        </select>
+      </div>
+
+      <div class="nice-form-group" >
+        <label>Thal</label>
+        <select name = "thal">
+          <option>Select One </option>
+          <option>Normal</option>
+          <option>Fixed Defect</option>
+          <option>Reversable Defect</option>
+        </select>
+      </div>
+
+      <details>
+        <summary>
+          <button type="submit" class="toggle-code">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-code">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+            Submit
+          </button>
+        </summary>
+      </details>
+      </form>
+    </section>
+
+    <section>
+      <div class="href-target" id="contribute1"></div>
+    </section>
+
+    <section>
+      <div class="href-target" id="contribute"></div>
+      <h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+        </svg>
+        Heart Disease Prediction
+      </h1>
+      <p>
+        A Ml model designed to predict heart disease with the backend made in Python using fastapi and also integrating mongodb to store the predictions with their inputs
+      </p>
+
+      <a href="https://github.com/nimo-codes" class="to-repo" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+          <polyline points="15 3 21 3 21 9" />
+          <line x1="10" y1="14" x2="21" y2="3" />
+        </svg>
+        Check out my repo
+      </a>
+    </section>
+    <footer>Made with ♥ by Naman Nanda</footer>
+  </main>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
+
+<script>
+document.getElementById("predictionForm").addEventListener("submit", function(event) {
+  event.preventDefault(); 
+
+  var formData = new FormData(this);
+  var jsonData = {};
+  formData.forEach(function(value, key) {
+    jsonData[key] = value;
+  });
+  // console.log(JSON.stringify(jsonData))
+  fetch('https://heartdiseaseapi-ixmu.onrender.com/predict', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(jsonData)
+  })
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+      alert(data.prediction);
+      document.querySelector('.contribute1').innerText = data.prediction 
+    })
+    .catch(error => {
+      console.error('There was a problem with your fetch operation:', error);
+      alert("An error occurred while submitting data.");
+    });
+  });
+</script>
