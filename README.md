@@ -15,7 +15,7 @@ To run the project locally, follow these steps:
 
 1. Clone this repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/nimo-codes/Heart-Disease-Detector-Frontend-API-ML-.git
    ```
 
 2. Navigate to the project directory:
