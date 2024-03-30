@@ -1,0 +1,6 @@
+pymongo
+pydantic
+typing
+joblib
+uvicorn
+fastapi
