@@ -4,3 +4,4 @@ typing
 joblib
 uvicorn
 fastapi
+numpy
