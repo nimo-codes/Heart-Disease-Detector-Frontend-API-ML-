@@ -5,3 +5,4 @@ joblib
 uvicorn
 fastapi
 numpy
+scikit-learn
