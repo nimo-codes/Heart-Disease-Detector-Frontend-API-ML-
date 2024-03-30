@@ -52,6 +52,7 @@ The API requires the following dependencies:
 - joblib
 - pymongo
 - numpy
+- scikit-learn=1.2.2
 
 Install them using:
 ```bash
