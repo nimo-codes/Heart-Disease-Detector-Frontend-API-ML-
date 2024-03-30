@@ -228,7 +228,7 @@ document.getElementById("predictionForm").addEventListener("submit", function(ev
     jsonData[key] = value;
   });
   // console.log(JSON.stringify(jsonData))
-  fetch('http://127.0.0.1:8000/predict', {
+  fetch('https://heartdiseaseapi-ixmu.onrender.com/predict', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
