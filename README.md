@@ -61,6 +61,33 @@ Install them using:
 pip install -r requirements.txt
 ```
 
+
+
+# Text Animation Script
+
+This Python script allows you to add animated text to a video file. It utilizes the `moviepy` library to edit videos and `os` module to handle file paths and directory changes.
+
+## How It Works
+
+The script takes a video file and a list of text entries as input. Each text entry consists of the text to be displayed and its duration in seconds. It then generates a new video file with the specified text animated onto the original video.
+
+1. **Text Entry Specification**: Each text entry in the `text_entries` list is defined by a `TextEntry` object, which includes the text content and its duration.
+
+2. **Text Animation**: The script uses the `TextClip` class from the `moviepy.editor` module to create a text clip for each entry. The text clip is configured with the specified text, fontsize, color, position, and duration.
+
+3. **Video Processing**: The original video file is loaded using `VideoFileClip` class. The text clips are then composited onto the video using the `CompositeVideoClip` class to create the final video with animated text.
+
+4. **Output**: The script saves the resulting video file (`output_video.mp4`) in the current directory.
+
+## Usage
+
+1. Install the required libraries:
+   - pydantic
+   - List
+   - moviepy
+2. To run the script, simply do - python animate.py or python3 animate.py
+
+
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
