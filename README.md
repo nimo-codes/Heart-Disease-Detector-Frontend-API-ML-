@@ -2,6 +2,8 @@
 
 ## Overview
 Heart Disease Predictor is a web application that predicts the likelihood of heart disease based on various input parameters. It includes a FastAPI backend for making predictions and a frontend interface for user interaction. try it? : URL: https://heart-disease-detector-5ykjaaunx-my-team70.vercel.app
+as the hosting of the api is free, (the API automatically shuts down or delays the calls by 50 - 60 seconds)
+
 
 ## Features
 - Accepts user input data through a web form.
